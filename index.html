@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Jemelyn Earl C. Bacerra | Portfolio</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#about"><i class="fas fa-user"></i> About Me</a>
+    <a href="#skills"><i class="fas fa-lightbulb"></i> Skills</a>
+    <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
+    <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <!-- LEFT SIDE IMAGE -->
+      <div class="about-image fade-in-left">
+        <img src="Gojo.jpg" alt="Profile Picture">
+      </div>
+      <!-- RIGHT SIDE TEXT -->
+      <div class="about-text fade-in-right">
+        <h1>Jemelyn Earl C. Bacerra</h1>
+        <p class="subtitle">Focused. Disciplined. Ready to Grow.</p>
+        <h2 class="about-title">About Me</h2>
+        <p>
+          I am a motivated individual seeking an opportunity to grow professionally,
+          improve my skills, and contribute value to a company.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="right">
+    <h2>Skills</h2>
+  
+    <div class="skills-container" class="skill fade-in-up">
+      <!-- Technical Skills -->
+      <div class="skills-group">
+        <h3>Technical Skills</h3>
+        <div class="skills-icons">
+          <div class="skill">
+            <img src="word.png" alt="Word">
+            <p>Word</p>
+          </div>
+          <div class="skill">
+            <img src="excel.png" alt="Excel">
+            <p>Excel</p>
+          </div>
+          <div class="skill">
+            <img src="power.png" alt="PowerPoint">
+            <p>PowerPoint</p>
+          </div>
+          <div class="skill">
+            <img src="html.png" alt="HTML">
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <img src="css-3.png" alt="CSS">
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <img src="android-studio.png" alt="Android Studio">
+            <p>Android Studio</p>
+          </div>
+          <div class="skill">
+            <img src="fire.png" alt="Firebase">
+            <p>Firebase</p>
+          </div>
+          <div class="skill">
+            <img src="palette.png" alt="Canva">
+            <p>Canva</p>
+          </div>
+          <div class="skill">
+            <img src="tik-tok.png" alt="TikTok">
+            <p>TikTok</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- AI Tools -->
+      <div class="skills-group" style="margin-top: 40px;">
+        <h3>AI Tools</h3>
+        <div class="skills-icons">
+          <div class="skill">
+            <img src="chatgpt.png" alt="ChatGPT">
+            <p>ChatGPT</p>
+          </div>
+          <div class="skill">
+            <img src="gemini.png" alt="Gemini">
+            <p>Gemini</p>
+          </div>
+          <div class="skill">
+            <img src="blackbox.jpg" alt="Blackbox">
+            <p>Blackbox</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="left">
+    <h2>Projects Experience</h2>
+    <ul>
+        <li>Developed a mobile application using Android Studio, contributing to the UI and functionality.</li>
+        <li>Integrated Firebase (Realtime Database, Storage, Auth) for backend setup.</li>
+        <li>HTML & CSS Portfolio Website</li>
+        <li>School / Training Projects</li>
+        <li>Hands-on Computer Tasks</li>
+    </ul>
+  </section>
+
+  <section id="education" class="right">
+    <h2>Educational Attainment</h2>
+    <h3>Tertiary</h3>
+    <p>Bachelor of Science Information Technology<br>Tarlac Agricultural University (TAU)<br>2021-2025</p>
+
+    <h2>On the Job Training Experience</h2>
+    <p>Tarlac Agricultural University - Office of the Vice President for Research, Extension and Training <br>February – May 2025</p>
+    <ul>
+      <li>Assisted in filing and organizing documents</li>
+      <li>Encoded and transferred data to electronic databases </li>
+      <li>Created graphic designs and presentation materials</li>
+      <li>Handled telephone calls and assisted visitors</li>
+      <li>Completed assigned tasks accurately and on time</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="left">
+    <h2>Contact</h2>
+    <p>
+      <i class="fas fa-envelope"></i> Email: jemelynearlbacerra@gmail.com<br>
+      <i class="fas fa-phone"></i> Phone: 09476944077
+    </p>
+    <a href="Bacerra_Jemelyn.pdf" class="btn"><i class="fas fa-download"></i> Download Resume</a>
+  </section>
+
+  <footer>© 2026 Jemelyn Earl C. Bacerra | Portfolio</footer>
+
+  <script>
+    // Scroll-triggered animations
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
